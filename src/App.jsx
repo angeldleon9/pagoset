@@ -1,5 +1,5 @@
-import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react";
-
+import { SignedIn, SignedOut, SignInButton } from "@clerk/clerk-react";
+import GeneradorRecibo from "./paginas/GeneradorRecibo";
 export default function App() {
   return (
     <header>
@@ -7,7 +7,7 @@ export default function App() {
         <SignInButton />
       </SignedOut>
       <SignedIn>
-        <UserButton />
+          <GeneradorRecibo />
       </SignedIn>
     </header>
   );
