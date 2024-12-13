@@ -1,4 +1,9 @@
 import { UserButton } from "@clerk/clerk-react";
+import { useEffect, useState } from 'react'
+import { createClient } from '@supabase/supabase-js'
+
+import Navbar from '../components/Navbar'
+
 
 const GeneradorRecibo = ()=> {
 
