@@ -9,7 +9,7 @@ const supabaseKey = import.meta.env.VITE_SUPABASE_KEY
 const db = createClient(supabaseUrl, supabaseKey)
 
 
-const GeneradorRecibo = ()=> {
+const GeneradorRecibo = () => {
 
     const [users, setUsers] = useState([]);
 
@@ -25,7 +25,7 @@ const GeneradorRecibo = ()=> {
         };
         fetchUsers();
     }, []);
-    
+
 
     return (
         <div className="drawer">
@@ -62,7 +62,7 @@ const GeneradorRecibo = ()=> {
                     <h1>Sistema de pagos Colegio SET</h1>
                     <ul>
                         {users.map((user) => (
-                            <li key={user.id}>{user.name}</li>
+                                <li key={user.id}>{user.name} {user.last_name}</li>
                         ))}
                     </ul>
                 </div>
